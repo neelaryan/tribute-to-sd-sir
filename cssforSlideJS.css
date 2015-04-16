@@ -1713,7 +1713,7 @@ small {
 }
 
 a:link, a:visited {
-    color: #d22929;
+    /*color: #d22929;*/
     text-decoration: none;
     font-weight: 600;
 }

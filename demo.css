@@ -12,9 +12,10 @@ body {
 
 
 h1, h2 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans Normal', sans-serif;
 	font-weight: 300;
 	margin:0 0 15px 0;
+	text-shadow: 1px 1px #525252;
 }
 
 
@@ -147,7 +148,8 @@ a {
 
 .sTop .inner {
 	position: relative;
-	bottom: 5px;
+	top: 350px;
+	color: #FFF;
 }
 
 .s1 {

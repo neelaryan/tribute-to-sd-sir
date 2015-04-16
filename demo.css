@@ -133,7 +133,7 @@ a {
 	color:#3d3d3d;
 	padding: 50px 0;
 	height: 300px;
-  	background-position: 50% 50%;
+  	background-position: center top;
   	-webkit-background-origin: padding-box;
   	background-origin: padding-box;
   	-webkit-background-clip: border-box;
@@ -141,7 +141,8 @@ a {
   	-webkit-background-size: auto auto;
   	background-size: 120%;
   	background-repeat: no-repeat;
-  	opacity: 60%;
+  	opacity: 0.2;
+  	filter: alpha(opacity=20);
 }
 
 .s1 {

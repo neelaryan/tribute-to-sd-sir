@@ -129,11 +129,10 @@ a {
 /* SECTIONS */
 .sTop {
 	min-height: 130px;
-	/*background: url(https://farm9.staticflickr.com/8722/17156823842_d556d00db7_o.jpg);*/
+	background: url(https://farm9.staticflickr.com/8722/17156823842_d556d00db7_o.jpg);
 	color:#3d3d3d;
 	padding: 50px 0;
 	height: 300px;
-	background: url("http://enjoycss.com/bg-img/default/3_6.png");
   	background-position: 50% 50%;
   	-webkit-background-origin: padding-box;
   	background-origin: padding-box;

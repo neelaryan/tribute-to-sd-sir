@@ -132,7 +132,7 @@ a {
 	background: url(https://farm9.staticflickr.com/8722/17156823842_d556d00db7_o.jpg);
 	color:#3d3d3d;
 	padding: 50px 0;
-	height: 800px;
+	height: 500px;
   	background-position: center top;
   	-webkit-background-origin: padding-box;
   	background-origin: padding-box;
@@ -142,8 +142,12 @@ a {
   	background-size: 120%;
   	background-repeat: no-repeat;
   	background-color: #fff;
-  	opacity: 0.6;
-  	filter: alpha(opacity=60);
+  	filter: grayscale(60%);
+}
+
+.sTop .inner {
+	position: relative;
+	bottom: 5px;
 }
 
 .s1 {

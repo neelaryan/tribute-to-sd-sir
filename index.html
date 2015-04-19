@@ -1,259 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>
-      Tribute to S.D. Sir
-    </title>
-    <meta name="description" content="This is a small gift from the 2012-2015 batch students to S.D. Sir.">
-    <meta name="author" content="Arannya Mukherjee">
-    <meta name="viewport" content="width=device-width">
-    
-    <link rel="stylesheet" href="cssforSlideJS.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="tribute.css">
-    <link rel="stylesheet" href="page.css">
-    
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="jquery.slides.min.js"></script>
-    <script src="jquery.smint.js"></script>
-    
-    <!--<script type="text/javascript">
-      $(document).ready( function() {
-  		$('.subMenu').smint({
-        		'scrollSpeed' : 1000
-  		});
-  	  });
-    </script>-->
-  
-    <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
-    <!--<script>
-      $(function() {
-        $('#slides').slidesjs({
-          width: 940,
-          height: 528,
-          navigation: false,
-          start: 1,
-          play: {
-            auto: true
-          }
-        });
-      });
-    </script>-->
-    <!-- End SlidesJS Required -->
-    
-    <!-- adjective rotation -->
-	<script>
-    	(function($){
-    	  $.fn.extend({    
-	        rotaterator: function(options) {          
-	          var defaults = {
-	            fadeSpeed: 500,
-	            pauseSpeed: 100,
-	            child:null
-	          };
-          
-    	      var options = $.extend(defaults, options);
-          
-          	  return this.each(function() {
-              	var o =options;
-	              var obj = $(this);
+	<head>
+    	<meta charset="utf-8">
+    	<title>Tribute to S.D. Sir</title>
+    	<meta name="description" content="This is a small gift from the 2012-2015 batch students to S.D. Sir.">
+    	<meta name="author" content="Arannya Mukherjee">
+    	<meta name="viewport" content="width=device-width">
+	    
+	    <link rel="stylesheet" href="cssforSlideJS.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="tribute.css">
+	    <link rel="stylesheet" href="page.css">
+	    
+	    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	    <script src="jquery.slides.min.js"></script>
+	    <script src="jquery.smint.js"></script>
+	    <!-- adjective rotation -->
+		<script>
+    		(function($){
+    			$.fn.extend({    
+	        		rotaterator: function(options) {          
+	          		var defaults = {
+	            		fadeSpeed: 500,
+	            		pauseSpeed: 100,
+	            		child:null
+	          		};          
+    	      		var options = $.extend(defaults, options);
+
+          			return this.each(function() {
+              			var o =options;
+	            		var obj = $(this);
 	            
-	              var items = $(obj.children(), obj);
-	              items.each(function() {
-	  	            $(this).hide();
-	              })
-	              if(!o.child){
-	                var next = $(obj).children(':first');
-	              }
-	              else{
-	                var next = o.child;
-	              }
-	              $(next).fadeIn(o.fadeSpeed, function() {
-	                $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
-	                  var next = $(this).next();
-	                  if (next.length == 0){
-	                    next = $(obj).children(':first');
-	                  }
-	                  $(obj).rotaterator({
-	                    child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
-	                })
-	              });
-              });
-           }
-         });
-   		})(jQuery);
-    
-    	/*$(document).ready(function() {
-	      $('.adjective').rotaterator({
-	        fadeSpeed:500, pauseSpeed:500});
-	    });*/
-    </script>
-    
-    <script>
-    	// Popup window code
-    	function newPopup(url) {
-    		popupWindow = window.open(url,'popUpWindow','height=750,width=750,left=10,top=10,resizable=yes,\
-    			scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-    	}
-    </script>
-    
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	            		var items = $(obj.children(), obj);
+	            		items.each(function() {
+	  	        			$(this).hide();
+	            		})
+	            		if(!o.child){
+	                		var next = $(obj).children(':first');
+	            		}
+	            		else{
+	                		var next = o.child;
+	            		}
+	            		$(next).fadeIn(o.fadeSpeed, function() {
+	                		$(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+	                			var next = $(this).next();
+	                			if (next.length == 0){
+	                    			next = $(obj).children(':first');
+	                  			}
+	                  			$(obj).rotaterator({
+	                    			child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+	                		})
+	              		});
+              		});
+           			}
+         		});
+   			})(jQuery);
+	    </script>
+	    <!-- Popup window code -->
+	    <script>
+    		function newPopup(url) {
+    			popupWindow = window.open(url,'popUpWindow','height=750,width=750,left=10,top=10,resizable=yes,\
+    				scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+    		}
+	    </script>
+	    <!-- Google Analytics code -->
+	    <script>
+    		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    		ga('create', 'UA-53245556-5', 'auto');
+    		ga('send', 'pageview');
+	    </script>
+  	</head>
+	<body onload="$('.adjective').rotaterator({fadeSpeed:500, pauseSpeed:500});
+  		$('#slides').slidesjs({width: 940,height: 528,navigation: false,start: 1,play: {auto: true}});
+  		$('.subMenu').smint({'scrollSpeed' : 1000});">
 
-  ga('create', 'UA-53245556-5', 'auto');
-  ga('send', 'pageview');
+  		<div class="section sTop">
+			<div class="inner">
+				<div class="header">
+					<div class="name"><h1>Satyajit De Sir : </h1></div>
+					<div class="adjective">
+					<div><h1> Tutor</h1></div>
+                			<div><h1> Mentor</h1></div>
+	            			<div><h1> Guide</h1></div>
+	        		</div>
+				</div>
+				<div class="description"><h2>This is a small gift from the 2012-2015 batch students to S.D. Sir.</h2></div>
+			</div>
+  		</div>
 
-</script>
-  
-  </head>
-  <body onload="$('.adjective').rotaterator({fadeSpeed:500, pauseSpeed:500});
-  	$('#slides').slidesjs({width: 940,height: 528,navigation: false,start: 1,play: {auto: true}});
-  	$('.subMenu').smint({'scrollSpeed' : 1000});">
-  
-  <div class="section sTop">
-		<div class="inner">
-		<div class="header">
-			<div class="name"><h1>Satyajit De Sir : </h1></div>
-			<h1><div class="adjective">
-				<div> Tutor</div>
-                		<div> Mentor</div>
-	            		<div> Guide</div>
-	        	</div></h1>
-		</div>
-		<h2>
-			<div class="description">This is a small gift from the 2012-2015 batch students to S.D. Sir.</div>
-		</h2>
-		</div>
-  </div>
-
-	<div class="subMenu" >
-	 	<div class="inner">
-	 		<a href="#sTop" class="subNavBtn">Home</a>
-	 		<a href="#s1" class="subNavBtn">Content</a> 
-			<a href="#s2" class="subNavBtn">Memories</a>
-			<a href="#s3" class="subNavBtn">Your Words</a>
-			<a href="#s4" class="subNavBtn">Thank You</a>
-			<a href="#s5" class="subNavBtn">About This</a>
-		</div>
-	</div>
-
-	<div class="section s1">
-		<div class="inner ">
-			<h1>Scroll down</h1>
-			<div style="position:absolute; top: 50%; left: 40%; font-size: 250%; color:#232525;">
-				<i class="fa fa-chevron-down"></i>
-				<i class="fa fa-chevron-down"></i>
-				<i class="fa fa-chevron-down"></i>
-				<i class="fa fa-chevron-down"></i>
+		<div class="subMenu" >
+		 	<div class="inner">
+	 			<a href="#sTop" class="subNavBtn">Home</a>
+	 			<a href="#s1" class="subNavBtn">Content</a> 
+				<a href="#s2" class="subNavBtn">Memories</a>
+				<a href="#s3" class="subNavBtn">Your Words</a>
+				<a href="#s4" class="subNavBtn">Thank You</a>
+				<a href="#s5" class="subNavBtn">About This</a>
 			</div>
 		</div>
-	</div>
-	
-	<div class="section s2">
-		<div class="inner">
-			<h1>Some Memories from Teacher's Day 2014</h1>
-			    <div class="container">
-			      <div id="slides">
-			        <img src="https://farm8.staticflickr.com/7653/16538280983_f1eee69fa9_o.jpg" alt="">
-			        <img src="https://farm9.staticflickr.com/8717/17156826692_b01fd2ef46_o.jpg" alt="">
-			        <img src="https://farm9.staticflickr.com/8753/16536010194_36a13410dc_o.jpg" alt="">
-			        <img src="https://farm8.staticflickr.com/7625/16970902420_b3c899e26d_o.jpg" alt="">
-			        <img src="https://farm8.staticflickr.com/7615/16951032917_21f77d3797_o.jpg" alt="">
-			        <img src="https://farm8.staticflickr.com/7651/17158421495_2e0e13fcb8_o.jpg" alt="">
-			        <!--<img src="https://farm9.staticflickr.com/8722/17156823842_d556d00db7_o.jpg" alt="">-->
-			        <a href="#" class="slidesjs-previous slidesjs-navigation">
-			          <i class="fa fa-chevron-left"></i>
-			        </a>
-			        <a href="#" class="slidesjs-next slidesjs-navigation">
-			          <i class="fa fa-chevron-right"></i>
-			        </a>
-		      	  </div>
-		    	</div>
-    	</div>
-	</div>
-	
-	<div class="section s3">
-		<div class="inner">
-			<h1>What We Will Miss The Most</h1>
-			<p style="float:right;"><i class="fa fa-quote-left"></i>
-				Agey byabsa koreni, tarpor porano
-			<i class="fa fa-quote-right"></i></p>
-			<br />
-			<p style="float:left;"><i class="fa fa-quote-left"></i>
-				Cholo bondhugon, onek golpo hoy geche.. ebar fire ashi poray
-			<i class="fa fa-quote-right"></i></p>
-			<br />
-			<p style="float:right;"><i class="fa fa-quote-left"></i>
-				1000 taka poranor ar 50 taka bokar jonno
-			<i class="fa fa-quote-right"></i></p>
-			<br/>
-			<p style="float:left;"><i class="fa fa-quote-left"></i>
-				Parle bhalo, na parle asche bochor abar hobe
-			<i class="fa fa-quote-right"></i></p>
-		</div>
-	</div>
 
-	<div class="section s4">
-		<div class="inner">
-			<h1>Thank You Sir,</h1>
-			<p><i class="fa fa-quote-left"></i>
-				For guiding us throughout the years of graduation.
-			<i class="fa fa-quote-right"></i></p>
-			<br />
-			<p><i class="fa fa-quote-left"></i>
-				For enabling us with the knowledge and tools to help us succeed.
-			<i class="fa fa-quote-right"></i></p>
-			<br />
-			<p><i class="fa fa-quote-left"></i>
-				For giving us your precious time.
-			<i class="fa fa-quote-right"></i></p>
-			<br/>
-			<p><i class="fa fa-quote-left"></i>
-				We owe you a lot.
-			<i class="fa fa-quote-right"></i></p>
+		<div class="section s1">
+			<div class="inner ">
+				<h1>Scroll down</h1>
+				<div style="position:absolute; top: 50%; left: 40%; font-size: 250%; color:#232525;">
+					<i class="fa fa-chevron-down"></i>
+					<i class="fa fa-chevron-down"></i>
+					<i class="fa fa-chevron-down"></i>
+					<i class="fa fa-chevron-down"></i>
+				</div>
+			</div>
 		</div>
-	</div>
+	
+		<div class="section s2">
+			<div class="inner">
+				<h1>Some Memories from Teacher's Day 2014</h1>
+				    <div class="container">
+				      	<div id="slides">
+				        	<img src="https://farm8.staticflickr.com/7653/16538280983_f1eee69fa9_o.jpg" alt="">
+			        		<img src="https://farm9.staticflickr.com/8717/17156826692_b01fd2ef46_o.jpg" alt="">
+			        		<img src="https://farm9.staticflickr.com/8753/16536010194_36a13410dc_o.jpg" alt="">
+			        		<img src="https://farm8.staticflickr.com/7625/16970902420_b3c899e26d_o.jpg" alt="">
+			        		<img src="https://farm8.staticflickr.com/7615/16951032917_21f77d3797_o.jpg" alt="">
+			        		<img src="https://farm8.staticflickr.com/7651/17158421495_2e0e13fcb8_o.jpg" alt="">
+			        		<!--<img src="https://farm9.staticflickr.com/8722/17156823842_d556d00db7_o.jpg" alt="">-->
+			        		<a href="#" class="slidesjs-previous slidesjs-navigation">
+			          			<i class="fa fa-chevron-left"></i>
+			        		</a>
+			        		<a href="#" class="slidesjs-next slidesjs-navigation">
+			          			<i class="fa fa-chevron-right"></i>
+			        		</a>
+		      	  		</div>
+		    		</div>
+    		</div>
+		</div>
+	
+		<div class="section s3">
+			<div class="inner">
+				<h1>What We Will Miss The Most</h1>
+				<p style="float:right;"><i class="fa fa-quote-left"></i>
+					Agey byabsa koreni, tarpor porano
+				<i class="fa fa-quote-right"></i></p>
+				<br />
+				<p style="float:left;"><i class="fa fa-quote-left"></i>
+					Cholo bondhugon, onek golpo hoy geche.. ebar fire ashi poray
+				<i class="fa fa-quote-right"></i></p>
+				<br />
+				<p style="float:right;"><i class="fa fa-quote-left"></i>
+					1000 taka poranor ar 50 taka bokar jonno
+				<i class="fa fa-quote-right"></i></p>
+				<br/>
+				<p style="float:left;"><i class="fa fa-quote-left"></i>
+					Parle bhalo, na parle asche bochor abar hobe
+				<i class="fa fa-quote-right"></i></p>
+			</div>
+		</div>
 
-	<div class="section s5">
-		<div class="inner">
-			<h1>License, Source Code &amp; Sharing</h1>
-			<br />
-			<p>
-				This project is created using CSS3 <i class="fa fa-css3"></i>, HTML5 <i class="fa fa-html5"></i>, Javascript &amp; JQuery API's (powered by <a href="http://www.maxcdn.com/" target="_blank"><i class="fa fa-maxcdn"></i></a>).<br />
-				This project & it's source code is licensed under <a href="http://choosealicense.com/licenses/apache-2.0/" target="_blank">Apache License</a>.
-			</p>
-			<p>
-				Project is completely open-source. You can find it over at <a href="https://github.com/neelaryan/tribute-to-sd-sir" target="_blank"><i class="fa fa-github"></i> Github<a/>.
-			</p>
-			<p>
-				Share this :<br />
+		<div class="section s4">
+			<div class="inner">
+				<h1>Thank You Sir,</h1>
+				<p><i class="fa fa-quote-left"></i>
+					For guiding us throughout the years of graduation.
+				<i class="fa fa-quote-right"></i></p>
+				<br />
+				<p><i class="fa fa-quote-left"></i>
+					For enabling us with the knowledge and tools to help us succeed.
+				<i class="fa fa-quote-right"></i></p>
+				<br />
+				<p><i class="fa fa-quote-left"></i>
+					For giving us your precious time.
+				<i class="fa fa-quote-right"></i></p>
+				<br/>
+				<p><i class="fa fa-quote-left"></i>
+					We owe you a lot.
+				<i class="fa fa-quote-right"></i></p>
+			</div>
+		</div>
+
+		<div class="section s5">
+			<div class="inner">
+				<h1>License, Source Code &amp; Sharing</h1>
+				<br />
+				<p>
+					This project is created using CSS3 <i class="fa fa-css3"></i>, HTML5 <i class="fa fa-html5"></i>, Javascript &amp; JQuery API's (powered by <a href="http://www.maxcdn.com/" target="_blank"><i class="fa fa-maxcdn"></i></a>).<br />
+					This project &amp; it's source code is licensed under <a href="http://choosealicense.com/licenses/apache-2.0/" target="_blank">Apache License</a>.
+				</p>
+				<p>
+					Project is completely open-source. You can find it over at <a href="https://github.com/neelaryan/tribute-to-sd-sir" target="_blank"><i class="fa fa-github"></i> Github</a>.
+				</p>
+				<p>
+					Share this :<br />
 					<a href="javascript:newPopup('https://www.facebook.com/sharer/sharer.php?u=https://neelaryan.github.io/tribute-to-sd-sir/')"><i class="fa fa-facebook-square"></i></a>
 					<a href="javascript:newPopup('https://twitter.com/home?status=Tribute%20to%20S.D.%20Sir%20-%20Web%20Greeting%20Project%20by%20%40neel94%20https://neelaryan.github.io/tribute-to-sd-sir/')"><i class="fa fa-twitter-square"></i></a>
 					<a href="javascript:newPopup('https://plus.google.com/share?url=https://neelaryan.github.io/tribute-to-sd-sir/')"><i class="fa fa-google-plus-square"></i></a>
-					<a href="javascript:newPopup('https://www.linkedin.com/shareArticle?mini=true&url=https://neelaryan.github.io/tribute-to-sd-sir/&title=Tribute%20to%20S.D.%20Sir-%20Web%20Greeting&summary=A%20project%20by%20Arannya%20Mukherjee%20(in.linkedin.com/in/arannyamukherjee)&source=')"><i class="fa fa-linkedin-square"></i></a>
-			</p>
-			<p style="font-size:10px">
-				<b>Copyright 2015 Arannya Mukherjee</b><br />
-				Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
-				You may obtain a copy of the License at<br/>
-				<code><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a></code><br/>
-				Unless required by applicable law or agreed to in writing, software
-				distributed under the License is distributed on an "AS IS" BASIS,
-				WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-				See the License for the specific language governing permissions and
-				limitations under the License.
-			</p>
-			<p style="font-size:10px;">
-				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Tribute to S.D. Sir - Web Greeting</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://neelaryan.github.io/tribute-to-sd-sir/" property="cc:attributionName" rel="cc:attributionURL">Arannya Mukherjee</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Permissions beyond the scope of this license may be available at <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.apache.org/licenses/LICENSE-2.0" rel="cc:morePermissions">Apache License 2.0</a>.
-			</p>
+					<a href="javascript:newPopup('https://www.linkedin.com/shareArticle?mini=true&url=github.com/neelaryan/tribute-to-sd-sir/&title=Tribute%20to%20S.D.%20Sir%20-%20Web%20Greeting')"><i class="fa fa-linkedin-square"></i></a>
+				</p>
+				<p style="font-size:10px">
+					<b>Copyright 2015 Arannya Mukherjee</b><br />
+					Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+					You may obtain a copy of the License at<br/>
+					<code><a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">http://www.apache.org/licenses/LICENSE-2.0</a></code><br/>
+					Unless required by applicable law or agreed to in writing, software
+					distributed under the License is distributed on an "AS IS" BASIS,
+					WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+					See the License for the specific language governing permissions and
+					limitations under the License.
+				</p>
+				<p style="font-size:10px;">
+					<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span property="dc:title">Tribute to S.D. Sir - Web Greeting</span> by <a href="http://neelaryan.github.io/tribute-to-sd-sir/" property="cc:attributionURL"><span
+property="cc:attributionName">Arannya Mukherjee</span></a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.Permissions beyond the scope of this license may be available at <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="cc:morePermissions">Apache License 2.0</a>.
+				</p>
+			</div>
 		</div>
-	</div>
-
-	
-</div>
-  </body>
+  	</body>
 </html>

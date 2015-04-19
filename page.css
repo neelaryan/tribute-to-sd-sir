@@ -135,11 +135,8 @@ a {
 	padding: 50px 0;
 	height: 500px;
   	background-position: center top;
-  	-webkit-background-origin: padding-box;
   	background-origin: padding-box;
-  	-webkit-background-clip: border-box;
   	background-clip: border-box;
-  	-webkit-background-size: auto auto;
   	background-size: 120%;
   	background-repeat: no-repeat;
   	background-color: #fff;

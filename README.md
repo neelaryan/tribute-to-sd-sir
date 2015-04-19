@@ -1,4 +1,4 @@
-# tribute-to-sd-sir
+# Tribute to S.D. Sir - Web Greeting
 This is a small gift from the 2012-2015 batch students to S.D. Sir.
 Well, nobody else contributed, so it's solely me.
 

@@ -117,7 +117,7 @@ a {
 	background: #1783c7;
 }
 
-.active {
+.subMenu .active {
 	background: #25aae1;
 }
 .end {
@@ -155,7 +155,7 @@ a {
 .s1 {
 	background:#184764;
 	color:#fff;
-	height:200px;	
+	height:150px;	
 }
 
 
@@ -182,11 +182,13 @@ a {
 
 .s3 {
 	background: #1b83b3;
+	height: 575px;
 }
 
 
 .s4 {
 	background: #5aa3c4;
+	height: 580px;
 }
 
 
@@ -194,8 +196,56 @@ a {
 .s5 {
 	background: #bce1f1;
 	color: #3d3d3d;
+	height: 575px;
 }
 
 .s6 {
 	background: #161616;
+}
+
+.s3 p {
+	color: #E0E0E0;
+	font-weight: 400;
+	font-size: 28px;
+	padding: 40px 0px 0px 20px;
+}
+.s4 p {
+	font-weight: 400;
+	font-size: 28px;
+	padding: 40px 0px 0px 20px;
+}
+.s3 p:hover, .s4 p:hover {
+	margin-left: -50px;
+	margin-right: -50px;
+}
+
+.s5 p {
+	font-weight: 250;
+	font-size:28px;
+}
+
+.btn-large [class^="fa-quote-"],
+.btn-large [class*="fa-quote-"] {
+  margin-top: 4px;
+}
+.btn-small [class^="fa-quote-"],
+.btn-small [class*="fa-quote-"] {
+  margin-top: 0;
+}
+.btn-mini [class^="fa-quote-"],
+.btn-mini [class*="fa-quote-"] {
+  margin-top: -1px;
+}
+
+.btn-large [class^="fa"],
+.btn-large [class*="fa"] {
+  margin-top: 4px;
+}
+.btn-small [class^="fa"],
+.btn-small [class*="fa"] {
+  margin-top: 0;
+}
+.btn-mini [class^="fa"],
+.btn-mini [class*="fa"] {
+  margin-top: -1px;
 }

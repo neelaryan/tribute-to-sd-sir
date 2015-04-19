@@ -10,7 +10,7 @@ Well, nobody else contributed, so it's solely me.
 - tribute.css : all css entries for index.html
 - page.css : css for the entire page layout and desgin based on [smint]
 - cssforSlideJS.css : css for the image slider based on [SlidesJS]
-- jquery.slides.min.js : js file for [SlideJS] functionality
+- jquery.slides.min.js : js file for [SlidesJS] functionality
 - jquery.smint.js : js file for [smint] functionality
 - LICENSE : license statement for this project
 
